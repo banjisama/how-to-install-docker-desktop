@@ -7,11 +7,12 @@ prerequite:
    then run wsl --install again.
 3. then download docker desktop online and install it. everything should work smoothly 
 
- NB!!!
+ NB!!! (minikube doesn't work in china)
  to use minkube docker desktop must be running 
- 1. powershell as admin
- 2. choco install minikube (using chocolatey as the package manager)
- 3. run: minikube start --driver=docker
+ 1. powershell or cmd as admin
+ 2. run: choco install minikube (using chocolatey as the package manager)
+ 3. run: docker context use default
+ 4. run: minikube start --driver=docker
  4. run: minikube config set driver docker (to make docker the default driver)
 
 
