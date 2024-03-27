@@ -1,0 +1,18 @@
+prerequite:
+1. have windows 11 pro installed ( having lower versions will not work)
+2. make sure virtualization is enabled on your computer ( check youtube )
+2. install wsl
+   powershell --> run as admin --> wsl --install 
+   if it fails to install open cmd as admin --> run:  netsh winsock reset
+   then run wsl --install again.
+3. then download docker desktop online and install it. everything should work smoothly 
+
+ NB!!!
+ to use minkube docker desktop must be running 
+ 1. powershell as admin
+ 2. choco install minikube (using chocolatey as the package manager)
+ 3. run: minikube start --driver=docker
+ 4. run: minikube config set driver docker (to make docker the default driver)
+
+
+ 
